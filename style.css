@@ -1,0 +1,279 @@
+*{
+    padding:0;
+    margin:0;
+}
+nav{
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px 0px;
+}
+.plus-color{
+    color: yellow;
+    font-weight: 900;
+}
+.logo p{
+    color:white;
+    position: relative;
+    top:-5px;
+}
+.search{
+    background-color:white;
+    padding:8px 10px;
+    width: 420px;
+    height: 20px;
+    margin:0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    box-shadow: -7px -7px 10px rgba(0,0,0,0.1),
+    7px 7px 10px rgba(0,0,0,0.1);
+    border-radius: 2px;     
+}
+.search input{
+    width: 420px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.loginBtn{
+    padding: 7px 40px;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    color:#2874f0;
+    cursor: pointer;
+}
+.Navlink{
+    margin: 0px 20px;
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+}
+.angledownIcon i{
+    font-size: 10px;
+
+}
+.RecentSearch{
+    display: none;
+    position: absolute;
+    top:61px;
+    background-color: white;
+    width: 420px;
+    padding: 8px 10px;
+    margin-left: -10px;
+    height: 350px;
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.2),
+    5px 5px 10px rgba(0,0,0,0.2);
+    border-top: 1px solid #ccc;
+}
+.RecentSearch_List{
+    font-size: 16px;
+    display: flex;
+    color:rgb(95, 94, 94);
+}
+.RecentSearch_List p,
+.RecentSearch_List_Discover p
+{
+    padding-left: 15px;
+    color: rgb(24, 22, 22);;
+}
+.discoverMore{
+    margin: 15px 0px;
+    font-size: 15px;
+    color: rgb(95, 94, 94);
+}
+.RecentSearch_List_Discover{
+    padding: 10px 0px;
+    display: flex;
+}
+.RecentSearch_List_Discover i{
+    color: rgb(95, 94, 94); 
+    font-size: 20px;
+}
+
+.search:focus-within .RecentSearch{
+    display: block;
+}
+.HoverLogin{
+    position: absolute;
+    top: 62px;
+    height: 350px;
+    width: 200px;
+    margin-left: -100px;
+    background-color: white;
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.2),
+    5px 5px 10px rgba(0,0,0,0.2);
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+    font-weight: 500;
+    color: black;
+    display: none;
+}
+.triangle-up{
+    position: relative;
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid white;
+    top:-12px;
+}
+.Newuser{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.Newuser a{
+    color: royalblue;
+    text-decoration: none;
+}
+.Newuser a:hover{
+    text-decoration: underline;   
+}
+.loginMenu{
+   width: 200px;
+   margin-top: 25px;
+}
+.menuList{
+    display: flex;
+    padding: 15px 0px;
+}
+.menuList p{
+    padding-left: 20px;
+}
+.menuList i{
+    color: royalblue; 
+}
+.loginBtn:hover .HoverLogin{
+    display: flex;
+    cursor: pointer;
+}
+.angledownIcon:hover .moreIcon{
+    transition: 0.5s;
+    transform: rotate(-180deg);
+}
+.MoreOptionDisplay_Container{
+    position: relative;
+    height: 1px;
+    display: none;
+}
+.Moreoption_Content{
+    position: absolute;
+    margin-top: 20px;
+    /* border-top: 1000px #2874f0 */
+    width: 300px;
+    margin-left: -110px;
+    box-shadow: -5px 5px 7px rgba(0,0,0,0.2),
+    5px 5px 10px rgba(0,0,0,0.2);
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.Moreoption{
+    display: flex;
+    padding:15px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.Moreoption i{
+    font-size: 15px;
+    color: #2874f0;
+}
+.Moreoption p{
+    padding-left: 10px;
+}
+.angledownIcon:hover .MoreOptionDisplay_Container{
+    display: block;
+}
+
+
+/*top navbar product *********************/
+.topProductNavBar{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding:10px 50px;
+    border-bottom: 1px solid #ccc;
+}
+.topProductNavBar_Nav{
+    width: 80px;
+    height: 112px;
+    cursor: pointer;
+    flex: 1;
+}
+.topProductNavBar_Nav img{
+    width: 80px;
+    height: 80px;
+}
+.topProductNavBar_Nav p{
+    font-weight: 510px;
+}    
+.topProductNavBar_Nav:hover p{
+    color: #2874f0;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    padding:20px 0px;
+    /* overflow: hidden; */
+}
+.sliderImge{
+    width: 100%;
+    /* padding:0px 10px */
+    padding-right: 20px;
+    height: 250px;
+    /* animation: 15s sliderimages infinite; */
+}
+.Slider_image{
+    display: flex;
+    padding:0px 10px;
+}
+.btn-container{
+    margin: auto;
+    width: 10px;
+}
+.btn{
+    padding: 35px 15px;
+    background-color: white;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-left{
+    position: relative;
+    z-index: 5;
+}
+.btn-right{
+    position: relative;
+    left:-35px;
+}
+
+/*slider image animation*/
+/* @keyframes sliderimages {
+    0%,1%,2%,3%,4%,5%,6%,7%,8%,9%,10%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(-200%);
+    }
+    60%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-400%);
+    }
+    95%{
+        transform: translateX(-500%);
+    }
+}
